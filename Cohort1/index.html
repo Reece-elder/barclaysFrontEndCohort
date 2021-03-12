@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="general.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Front End Example</title>
+  </head>
+  <body>
+    <h1>Front End Project</h1>
+    <h3 class="borderRed">Subtitle for website</h3>
+    <!-- <h3>Second Sub title</h3> -->
+    <p id="paragraph">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, dolorum
+      repellat eveniet quas et recusandae fugit assumenda odit? Sed, odio vero
+      quasi obcaecati omnis reprehenderit molestias autem porro ut velit?
+    </p>
+
+    <!-- <div>
+      <p>This is a paragraph within a Div</p>
+      <p>This is a second paragraph within a div</p>
+      <div>This is a second div</div>
+      <span> New Span 1 </span>
+      <span> New Span 2 </span>
+    </div> -->
+
+    <!-- <div class="container">
+        <div class="row">
+          <div class="col-6 borderRed">
+            One of three columns
+          </div>
+          <div class="col-4 borderRed">
+            One of three columns
+          </div>
+          <div class="col borderRed">
+            One of three columns
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-4 borderRed">
+              One of three columns
+            </div>
+            <div class="col-8 borderRed">
+              One of three columns
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 borderRed">
+              One of three columns
+            </div>
+          </div>
+      </div> -->
+
+    <div class="formDiv container">
+        <h3> Form to submit data</h3>
+      <form>
+        <div class="form-group">
+            <label for="userIdForm"> User ID </label>
+            <input type="number" class="form-control" id="userIdForm">
+        </div>
+        <div class="form-group">
+            <label for="titleForm"> Title </label>
+            <input type="text" class="form-control" id="titleForm">
+        </div>
+        <div class="form-group">
+            <label for="bodyForm"> Body </label>
+            <input type="text" class="form-control" id="bodyForm">
+        </div>
+        <div class="buttonGroup">
+            <button type="button" class="btn btn-info" id="submitFormBtn"> Submit but cooler </button>
+            <button type="button" class="btn btn-info" id="readByIdBtn"> Read By ID </button>
+            <button type="button" class="btn btn-info" id="readAllBtn"> Read All  </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="cardDiv container mt-3">
+        <div class="card my-2">
+            <div class="card-body">
+                <h5 class="card-title">Title of card</h5>
+                <p class="card-text cardBodyText"> This is where the body of text will go</p>
+                <p class="card-text">
+                    <small class="text-muted cardIdText">This will be the user ID</small>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Document Object Model -->
+
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
