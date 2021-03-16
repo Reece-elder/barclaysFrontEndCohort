@@ -144,11 +144,7 @@ let getData = () => {
 
 let readAll = () => {
     fetch(`https://jsonplaceholder.typicode.com/posts`) // 1
-.then((response) => {
-    if (response.status !== 200) {        // 2
-        console.error(`status: ${response.status}`);
-        return;
-    } response.json() // 3
+.then((response) => {if (response.status !== 200) {console.error(`status: ${response.status}`);return;} response.json() // 3
     .then((data) => {
         for (let i of data){
             // console.log(i);
