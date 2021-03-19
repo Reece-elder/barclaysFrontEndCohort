@@ -19,11 +19,6 @@ let paraCounter = 0;
 // * Fetch Requests / Functions
 // Add more functions, fetch requests and put fetch requests inside of functions
 
-let getDataForm = () => {
-    let idValue = userIdForm.value;
-    console.log(idValue);
-}
-
 let addElement = () => {
     //console.log("Button Clicked");
     let newPara = document.createElement('p');

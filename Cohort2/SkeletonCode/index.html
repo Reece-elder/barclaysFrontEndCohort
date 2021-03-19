@@ -47,25 +47,30 @@
         <button type="button" class="btn btn-secondary" id="getAllDataBtn"> Get All Data </button>
         <button type="button" class="btn btn-success" id="getDataIdBtn"> Get Data by ID </button>
         <button type="button" class="btn btn-danger" id="deleteBtn"> Delete By ID </button>
-        <button type="button" class="btn btn-dark" id="PostToConsoleBtn"> Post To Console</button>
+        <!-- <button type="button" class="btn btn-dark" id="postToConsoleBtn"> Post To Console</button> -->
+        <!-- <button type="button" class="btn btn-primary" id="newParaBtn"> Add new Paragraph</button> -->
     </div>
 
     <!-- Example Card, take form values to populate card values -->
     <div class="container cardDiv">
       <div class="row mt-4">
-        <div class="col">
+        <div class="col" id="allDataDiv">
           <h3> Get all Data</h3>
+
+
           <div class="card my-2">
             <div class="card-body">
-                <h5 class="card-title">Title of card</h5>
-                <p class="card-text cardBodyText"> This is where the body of text will go</p>
+                <h5 class="card-title" id="cardTitle">Title of card</h5>
+                <p class="card-text cardBodyText" id="cardBody"> This is where the body of text will go</p>
                 <p class="card-text">
-                    <small class="text-muted cardIdText">This will be the user ID</small>
+                    <small class="text-muted cardIdText" id="cardId">This will be the user ID</small>
                 </p>
             </div>
           </div>
+
+
         </div>
-        <div class="col">
+        <div class="col" id="singleDataDiv">
           <h3> Get By ID </h3>
           <div class="card my-2">
             <div class="card-body">
@@ -78,6 +83,7 @@
           </div>
         </div>
       </div>
+      <!-- right here -->
     </div>
 
     <!-- BootStrap JS  -->
