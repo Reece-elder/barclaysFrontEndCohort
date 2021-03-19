@@ -1,0 +1,39 @@
+body {
+    color: darkred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* * element selector */
+h1 {
+    color: darkblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* * class selector */
+.classExample {
+    color: darkolivegreen;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* * id selector */
+#idExample {
+    color: magenta;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* ! Box Model */
+/* * Content - Size of the element
+*    Padding - Distance between Content and Border
+*    Border - The border of the element (Can be stylised)
+*    Margin - The distance between this element and other elements */
+
+
+div {
+    width: 300px;
+    padding: 10px;
+    border: 5px solid red;
+    margin: 10px;
+}
+
