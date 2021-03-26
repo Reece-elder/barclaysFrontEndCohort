@@ -12,7 +12,9 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
   </head>
+
   <body>
       <div class="container headerDiv">
         <h1>Front End Skeleton</h1>
@@ -24,21 +26,47 @@
       <h3>Form to Submit Data</h3>
       <form>
         <div class="form-group">
-          <label for="userIdForm"> First Form </label>
-          <input type="number" class="form-control" id="userIdForm" />
+          <label for="userIdForm"> User ID </label>
+          <input type="number" class="form-control" id="userIdForm" placeholder="Please enter a userID"/>
+        </div>
+
+        <div class="form-group">
+          <label for="titleForm">Title of Post</label>
+          <input type="text" class="form-control" id="titleForm" placeholder="Please enter a title">
+        </div>
+
+        <div class="form-group">
+          <label for="bodyForm">Body of Post</label>
+          <textarea class="form-control" id="bodyForm" rows="3" placeholder="Please enter post body"></textarea>
         </div>
       </form>
     </div>
 
     <!-- Add more Button Functions  -->
-    <div class="container buttonGroup">
+    <div class="container buttonDiv">
         <button type="button" class="btn btn-info" id="submitBtn"> Submit </button>
-        <button type="button" class="btn btn-success" id="addBtn"> Add Paragraph </button>
-    </div>
+        <button type="button" class="btn btn-secondary" id="readAllBtn"> Read All Data </button>
+        <button type="button" class="btn btn-primary" id="readByIdBtn"> Read by ID </button>
+      </div>
 
     <!-- Example Card, take form values to populate card values -->
-    <div class="container cardDiv">
-        <div class="card my-2">
+    <div class="container cardDiv mt-3">
+      <div class="row">
+        <div class="col" id="readAllDiv">
+          <h3> Read all Data </h3>
+          <div class="card my-2">
+            <div class="card-body">
+                <h5 class="card-title cardTitleText" >Title of card</h5>
+                <p class="card-text cardBodyText"> This is where the body of text will go</p>
+                <p class="card-text">
+                    <small class="text-muted cardIdText">This will be the user ID</small>
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="readOneDiv">
+          <h3> Read Data by ID</h3>
+          <div class="card my-2">
             <div class="card-body">
                 <h5 class="card-title">Title of card</h5>
                 <p class="card-text cardBodyText"> This is where the body of text will go</p>
@@ -46,7 +74,9 @@
                     <small class="text-muted cardIdText">This will be the user ID</small>
                 </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- BootStrap JS  -->
@@ -60,6 +90,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    <script src="JS/index.js"></script>
   </body>
 </html>
